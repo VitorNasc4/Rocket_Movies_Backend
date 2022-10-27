@@ -16,7 +16,7 @@ const uploadConfig = require("./configs/upload")
 
 const cors = require("cors")
 
-const PORT = process.env.SERVER_PORT || 3333
+const PORT = process.env.PORT || 3333
 app.use(cors())
 app.use(express.json())
 app.use("/files", express.static(uploadConfig.UPLOADS_FOLDER))
